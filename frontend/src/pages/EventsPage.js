@@ -47,7 +47,7 @@ function EventsPage() {
 }
 
 async function loadEvents() {
-  const response = await fetch('http://localhost:8080/events');
+  const response = await fetch('https://events-one-pi.vercel.app/events');
   const resData = await response.json();
 
     if (!response.ok) {

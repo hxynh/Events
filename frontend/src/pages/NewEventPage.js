@@ -9,7 +9,7 @@ export async function action ({request, params}) {
     const method = request.method;
     const data = await request.formData();
     const id = method === 'PATCH' ? params.id : '';
-    const url = 'http://localhost:8080/events' + (method === 'PATCH' ? '/'+id : '');
+    const url = 'https://events-one-pi.vercel.app/events' + (method === 'PATCH' ? '/'+id : '');
 
     const enteredValue = {
         title: data.get('title'),
