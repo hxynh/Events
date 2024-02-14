@@ -5,12 +5,12 @@ const { v4: generateId } = require('uuid');
 const { NotFoundError } = require('../util/errors');
 
 async function readData() {
-  const data = await fs.readFile('events.json', 'utf8');
+  const data = await fs.readFile('../events.json', 'utf8');
   return JSON.parse(data);
 }
 
 async function writeData(data) {
-  await fs.writeFile('events.json', JSON.stringify(data));
+  await fs.writeFile('../events.json', JSON.stringify(data));
 }
 
 async function getAll() {
