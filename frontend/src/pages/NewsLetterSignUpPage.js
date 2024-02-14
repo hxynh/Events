@@ -1,3 +1,4 @@
+import React from 'react';
 import NewsletterSignup from '../components/NewsletterSignup';
 
 function NewsletterPage() {

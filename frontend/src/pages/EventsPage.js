@@ -25,8 +25,7 @@ export default function EventsPage() {
     )
 }*/
 
-
-import { Suspense } from 'react';
+import { React, Suspense } from 'react';
 import EventsList from '../components/EventsList';
 import { useLoaderData, json, defer, Await } from 'react-router-dom';
 

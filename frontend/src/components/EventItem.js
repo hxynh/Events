@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, useSubmit } from 'react-router-dom';
 import classes from './EventItem.module.css';
 
